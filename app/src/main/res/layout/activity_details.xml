@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".details">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Adhan Times for: "
+            android:textSize="20dp"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_selectedCity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Abu Dhabi"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_weight="3"
+
+        >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/cityPic"
+
+            ></ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play Adhan"
+                android:textSize="25dp"
+                android:textColor="#000"
+                ></TextView>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:maxWidth="80dp"
+                android:id="@+id/adhanPlay"
+
+                android:maxHeight="50dp"
+                android:background="@drawable/ic_play_arrow_black_24dp"
+
+
+                ></ImageButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="70dp"
+
+        android:layout_marginRight="30dp"
+        android:layout_weight="5"
+        android:visibility="invisible"
+        android:id="@+id/prayerTimesLayout"
+
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+
+
+
+            >
+           <ImageView
+               android:id="@+id/fajar_ptr"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/pointerprayer"
+                android:visibility="invisible"
+               ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fajir: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <TextView
+                android:id="@+id/fjrtime"
+
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5:23"
+                android:textSize="20dp"
+
+                android:textColor="#000"
+
+                ></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/duhar_ptr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pointerprayer"
+                android:visibility="invisible"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duhar: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <TextView
+                android:paddingLeft="60dp"
+                android:id="@+id/zhrtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5:23"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:textColor="#000"
+
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+
+
+            >
+            <ImageView
+                android:id="@+id/asar_ptr"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pointerprayer"
+
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asar: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <TextView
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5:23"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:textColor="#000"
+                android:id="@+id/asrtime"
+
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/maghrib_ptr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pointerprayer"
+                android:visibility="invisible"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maghrib: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <TextView
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5:23"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:gravity="right"
+                android:id="@+id/mghrbtime"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="20dp"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pointerprayer"
+                android:visibility="invisible"
+                android:id="@+id/ishaPtr"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isha: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <TextView
+                android:paddingLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5:23"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:textColor="#000"
+                android:id="@+id/ishatime"
+
+                ></TextView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

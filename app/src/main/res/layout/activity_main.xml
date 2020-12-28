@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="70dp"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@mipmap/kaaba"
+            android:layout_gravity="center"
+            ></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="City"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+
+    >
+    <Button
+        android:id="@+id/btn_gotoNext"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW PRAYER TIMES"
+        android:gravity="center"
+
+        ></Button>
+</LinearLayout>
+
+
+</LinearLayout>
